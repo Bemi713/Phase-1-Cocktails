@@ -1,20 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="index.js"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Recipes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .container {
+      width: 100vw;
+      height: 100vh;
+
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: bold;
+      font-size: 20px;
+
+      display: grid;
+
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px 1fr 1fr 100px;
+
+      gap: 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    .container div {
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .header {
+      grid-column-start: 1;
+      grid-column-end: 4;
+    }
+
+    .content-large {
+      grid-row-start: 2;
+      grid-row-end: span 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .content-small {
+      grid-row-start: 2;
+      grid-row-end: span 2;
+      grid-column-start: 3;
+      grid-column-end: 4;
+    }
+
+    .footer {
+      grid-column: 1/ span 3;
+    }
+  </style>
 </head>
 
 <body>
-  <div class="basic">
-    <div class="background">
+  <div class="container">
+    <div class="header">Header
       <h1>Cocktail Recipes</h1>
-      <!-- <h1>Drinkmaking app</h1> id="card-title" class="title"> -->
     </div>
-  </div>
-  <div class="basic">
-    <div class="background">
+    <div class="content-large">Content 1
       <select id="drinks">
         <option value="11145">Old Fashioned</option>
         <option value="11007">Margharita</option>
@@ -26,9 +82,8 @@
         <img class="image" id="thumbnail"
           src="https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg/preview">
       </div>
-      <div class="box">
-        <div class="item1"></div>
-      </div>
+    </div>
+    <div class="content-small">Content 2
       <ul id="ingredients">
 
       </ul>
@@ -43,16 +98,16 @@
           atque, odio vitae consequuntur!
         </p>
       </div>
-      <div class="likes-section">
-        <span id="like-count" class="likes">0 likes</span>
-        <button id="like-button" class="like-button">♥</button>
-      </div>
+    </div>
+    <div class="footer">Footer
       <form id="comment-form" class="comment-form">
         <input class="comment-input" type="text" name="comment" id="comment" placeholder="Add a comment..." />
         <button class="comment-button" type="submit">Post</button>
       </form>
     </div>
+
   </div>
+
 </body>
 
 </html>
