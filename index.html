@@ -1,50 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="index.js"></script>
-  </head>
 
-  <body>
-    <div class="basic">
-        <div class="background">
-          <h2 id="card-title" class="title">Drinkmaking app</h2>
-        </div>
-    </div>
-    <div class="basic">
-        <div class="background">
-          <select id="drinks">
-            <option value="11145">Old Fashioned</option>
-            <option value="11007">Margharita</option>
-            <option value="11288">Rum and Coke</option>
-            <option value="11000">Mojito</option>
-            <option value="11118">Blue Margarita</option>
-          </select>
-          <div> 
-            <img class="image" id= "thumbnail" src="https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg/preview">
-          </div>
-            <ul id="ingredients">
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="index.js"></script>
+</head>
 
-            </ul>
-            <div>
-                <p class="paragraph" id="recipe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, ea aut asperiores doloremque officiis atque sapiente deleniti quisquam? Alias iusto, dicta est accusamus fugit cupiditate! Ab tempora quo, maxime iste error libero minus quod eius corrupti fuga blanditiis officiis autem nulla vel, accusantium optio? Aut, deleniti? Fuga eos expedita, nostrum repellat dolorum ullam et, consequatur maxime reiciendis esse quisquam! Beatae dolor doloribus laborum doloremque omnis aliquid cumque tempora cum ratione voluptatem, dolore temporibus aperiam, quis iste quibusdam. Eaque vero ducimus expedita iste molestiae praesentium doloribus eos exercitationem quam deserunt enim consectetur sed repellat dignissimos facere quas atque, odio vitae consequuntur!
-                </p>
-            </div>
-        <div class="likes-section">
-            <span id="like-count" class="likes">0 likes</span>
-            <button id="like-button" class="like-button">♥</button>
-        </div>
-        <form id="comment-form" class="comment-form">
-          <input
-            class="comment-input"
-            type="text"
-            name="comment"
-            id="comment"
-            placeholder="Add a comment..."
-          />
-          <button class="comment-button" type="submit">Post</button>
-        </form>
+<body>
+  <div class="basic">
+    <div class="background">
+      <h1>Cocktail Recipes</h1>
+      <!-- <h1>Drinkmaking app</h1> id="card-title" class="title"> -->
     </div>
+  </div>
+  <div class="basic">
+    <div class="background">
+      <select id="drinks">
+        <option value="11145">Old Fashioned</option>
+        <option value="11007">Margharita</option>
+        <option value="11288">Rum and Coke</option>
+        <option value="11000">Mojito</option>
+        <option value="11118">Blue Margarita</option>
+      </select>
+      <div>
+        <img class="image" id="thumbnail"
+          src="https://www.thecocktaildb.com/images/media/drink/w8cxqv1582485254.jpg/preview">
+      </div>
+      <div class="box">
+        <div class="item1"></div>
+      </div>
+      <ul id="ingredients">
+
+      </ul>
+      <div>
+        <p class="paragraph" id="recipe">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, ea aut
+          asperiores doloremque officiis atque sapiente deleniti quisquam? Alias iusto, dicta est accusamus fugit
+          cupiditate! Ab tempora quo, maxime iste error libero minus quod eius corrupti fuga blanditiis officiis autem
+          nulla vel, accusantium optio? Aut, deleniti? Fuga eos expedita, nostrum repellat dolorum ullam et, consequatur
+          maxime reiciendis esse quisquam! Beatae dolor doloribus laborum doloremque omnis aliquid cumque tempora cum
+          ratione voluptatem, dolore temporibus aperiam, quis iste quibusdam. Eaque vero ducimus expedita iste molestiae
+          praesentium doloribus eos exercitationem quam deserunt enim consectetur sed repellat dignissimos facere quas
+          atque, odio vitae consequuntur!
+        </p>
+      </div>
+      <div class="likes-section">
+        <span id="like-count" class="likes">0 likes</span>
+        <button id="like-button" class="like-button">♥</button>
+      </div>
+      <form id="comment-form" class="comment-form">
+        <input class="comment-input" type="text" name="comment" id="comment" placeholder="Add a comment..." />
+        <button class="comment-button" type="submit">Post</button>
+      </form>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
