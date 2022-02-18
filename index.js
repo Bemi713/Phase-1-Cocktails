@@ -2,6 +2,7 @@ const url = "https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i="
 let thumbnail = document.getElementById("thumbnail")
 let recipe = document.getElementById("recipe")
 let ingredients = document.getElementById("ingredients")
+let commentSection = document.getElementById("comments-section")
 
 
 
@@ -27,15 +28,14 @@ function renderDrink(array) {
 
 
     function renderIngredients(array) {
-        console.log(array.drinks[0].strIngredient1, array.drinks[0].strMeasure1)
-
-
         if (array.drinks[0].strIngredient1 != null && array.drinks[0].strMeasure1 != null) {
             let ingredientsList = document.createElement("li")
+            ingredientsList.className = "list-item"
             ingredientsList.innerText = array.drinks[0].strMeasure1 + " " + array.drinks[0].strIngredient1
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient1) {
             let ingredientsList = document.createElement("li")
+            ingredientsList.className = "list-item"
             ingredientsList.innerText = array.drinks[0].strIngredient1
             ingredients.appendChild(ingredientsList)
         }
@@ -43,40 +43,48 @@ function renderDrink(array) {
         if (array.drinks[0].strIngredient2 != null && array.drinks[0].strMeasure2 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strMeasure2 + " " + array.drinks[0].strIngredient2
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient2) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strIngredient2
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         }
 
         if (array.drinks[0].strIngredient3 != null && array.drinks[0].strMeasure3 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strMeasure3 + " " + array.drinks[0].strIngredient3
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient3 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strIngredient3
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         }
 
         if (array.drinks[0].strIngredient4 != null && array.drinks[0].strMeasure4 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strMeasure4 + " " + array.drinks[0].strIngredient4
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient4 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strIngredient4
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         }
 
         if (array.drinks[0].strIngredient5 != null && array.drinks[0].strMeasure != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strMeasure5 + " " + array.drinks[0].strIngredient5
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient5 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strIngredient5
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         }
 
@@ -84,10 +92,12 @@ function renderDrink(array) {
         if (array.drinks[0].strIngredient6 != null && array.drinks[0].strMeasure != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strMeasure6 + " " + array.drinks[0].strIngredient6
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         } else if (array.drinks[0].strIngredient6 != null) {
             let ingredientsList = document.createElement("li")
             ingredientsList.innerText = array.drinks[0].strIngredient6
+            ingredientsList.className = "list-item"
             ingredients.appendChild(ingredientsList)
         }
 
@@ -100,6 +110,16 @@ function renderDrink(array) {
 
 }
 
+let likeBttn = document.getElementById('like-button')
+
+likeBttn.addEventListener("click", function() {
+    let numLikes = document.getElementById("like-count")
+    console.log(numLikes)
+    num = parseInt(numLikes.textContent)
+    ++num
+    numLikes.textContent = num
+})
+
 
 
 let dropdown = document.getElementById("drinks")
@@ -110,43 +130,18 @@ dropdown.addEventListener("change", (param) => {
     renderDrinks(param.target.value)
 })
 
-//Hello 
-// Comment Section
-
-var field = document.querySelector('textarea');
-var backUp = field.getAttribute('placeholder');
-var btn = document.querySelector('.btn');
-var clear = document.getElementById('clear')
 
 const commentsSeciton = document.getElementById("comments-section")
-const commentForm = document.getElementById("comments-form")
+const commentForm = document.getElementById("comment-form")
 const placeholder = document.getElementById("placeholder")
 
 commentForm.addEventListener("submit", (e) => {
     e.preventDefault();
     let newComment = document.createElement("li")
     newComment.innerText = placeholder.value
+    newComment.className = "comment"
     commentsSeciton.append(newComment)
     commentForm.reset();
 
 })
-
-field.onfocus = function(){
-    this.setAttribute('placeholder', '');
-    this.style.borderColor = '#333';
-    btn.style.display = 'block'
-}
-
-field.onblur = function(){
-    this.setAttribute('placeholder',backUp);
-    this.style.borderColor = '#aaa'
-}
-
-clear.onclick = function(){
-    btn.style.display = 'none';
-    field.value = '';
-}
-
-
-
 
