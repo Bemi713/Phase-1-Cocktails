@@ -1,210 +1,137 @@
-/* * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 50px;
-    text-align: center;
-    background-color: #fbfbfb;
-  }
-  
-  .basic {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-  }
-  
-  .background {
-    width: 1500px;
-    border: 1px solid #00000020;
-    border-radius: 10px;
-    text-align: left;
-    background-color: white;
-  }
-  
-  .image {
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px
-  }
-  
-  .title {
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 5rem;
-    font-weight: 600;
-    color: #000000dd;
-  }
-  
-  .likes-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-  }
-  
-  .likes {
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-  
-  .like-button {
-    color: rgb(255, 127, 80);
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    transition: color 300ms;
-    cursor: pointer;
-  }
-  
-  .like-button:hover {
-    color: rgb(241, 71, 19);
-  }
-  
-  .like-button:active {
-    color: rgb(253, 159, 124);
-  }
-  
-  .like-button:focus {
-    outline: none;
-  }
-  
-  .comments {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 10px;
-    font-size: 0.85rem;
-  }
+* {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
 
-  .comment-form {
-    width: 100%;
-    border-top: 1px solid #00000020;
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .comment-input {
-    width: 95%;
-    border: none;
-    font-size: 0.8rem;
-  }
-  
-  .comment-input:focus {
-    outline: none;
-  }
-  
-  .comment-button {
-    border: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(92, 114, 238);
-    cursor: pointer;
-    transition: color 300ms;
-  }
-  
-  .comment-button:hover {
-    color: rgb(37, 68, 245);
-  }
-  
-  .comment-button:active {
-    color: rgb(127, 146, 250);
-  }
-  
-  .comment-button:focus {
-    outline: none;
-  }
+body {
+  padding: 50px;
+  text-align: center;
+  background-color: #fbfbfb;
+}
 
-  .paragraph{
-    text-align: left;
-    padding: 10px;
-  }
-  
+.basic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
 
-  #drinks {
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-  } */
-  
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+.background {
+  width: 1500px;
+  border: 1px solid #00000020;
+  border-radius: 10px;
+  text-align: left;
+  background-color: white;
+}
 
-  *{
-    box-sizing: border-box;
-  }
+.image {
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px
+}
 
-  body{
-    background-color: white;
-    display: flex;
-    /* align-items: center;
-    text-align: center;
-    justify-content: center; */
-    margin: 0;
-  }
+.title {
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #000000dd;
+}
 
-  h1{
-    position: static;
-    font-size: 50px;
-    font-family: "Playfair Display", serif;
-  }
+.likes-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
 
-  #drinks {
-    position: static;
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    border: none;
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
-  } 
+.likes {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
-  .image {
-    float: left;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: inline;
-    /* margin-left: auto;
-    margin-right: auto;
-    padding: 8px 10px; */
-  }
-  .title {
-    text-align: center;
-    padding: 10px 8px;
-    font-size: 3rem;
-    font-weight: 250;
-    color: #140f0fdd;
-  }
+.like-button {
+  color: rgb(255, 127, 80);
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  transition: color 300ms;
+  cursor: pointer;
+}
 
-  .paragraph{
-    float: left;
-    display: static;
-    margin-left: 0;
-    margin-right: auto;
-    text-align: left;
-    padding: 10px;
-  }
+.like-button:hover {
+  color: rgb(241, 71, 19);
+}
 
-  .basic {
-    width: 25%;
-    display: block;
-    justify-content: center;
-    padding: 10px;
-  }
+.like-button:active {
+  color: rgb(253, 159, 124);
+}
 
-  .likes-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10px;
-  }
+.like-button:focus {
+  outline: none;
+}
 
-  #recipe{
-    justify-content: flex-end;
-  }
-  
+.comments {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
+}
+
+.comment-form {
+  width: 100%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.comment-input {
+  width: 95%;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.comment-input:focus {
+  outline: none;
+}
+
+.comment-button {
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
+}
+
+.comment-button:hover {
+  color: rgb(37, 68, 245);
+}
+
+.comment-button:active {
+  color: rgb(127, 146, 250);
+}
+
+.comment-button:focus {
+  outline: none;
+}
+
+.paragraph{
+  text-align: left;
+  padding: 10px;
+}
+
+
+#drinks {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.content-small {
+  align-items: flex-end;
+}
+
