@@ -5,6 +5,15 @@ let ingredients = document.getElementById("ingredients")
 
 
 
+let likeBTTN = document.getElementById('like-button')
+likeBTTN.addEventListener('click' ,(e) => {
+    let numLikes = document.getElementById('like-count')
+    ++num
+    numLikes.textContent = num
+})
+
+
+
 
 document.addEventListener("DOMContenLoaded", (param) => {
     renderDrinks(param);
@@ -110,7 +119,6 @@ dropdown.addEventListener("change", (param) => {
     renderDrinks(param.target.value)
 })
 
-//Hello 
 // Comment Section
 
 var field = document.querySelector('textarea');
@@ -146,7 +154,5 @@ clear.onclick = function(){
     btn.style.display = 'none';
     field.value = '';
 }
-
-
 
 

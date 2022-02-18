@@ -1,199 +1,139 @@
+
 * {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
   }
   
   body {
-    padding: 50px;
-    text-align: center;
-    background-color: #fbfbfb;
+  padding: 50px;
+  text-align: center;
+  background-color: #FBFBFB;
   }
   
   .basic {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
   }
   
   .background {
-    width: 1500px;
-    border: 1px solid #00000020;
-    border-radius: 10px;
-    text-align: left;
-    background-color: white;
+  width: 1500px;
+  border: 1px solid #00000020;
+  border-radius: 10px;
+  text-align: left;
+  background-color: white;
   }
   
   .image {
-    width: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px
   }
   
   .title {
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 5rem;
-    font-weight: 600;
-    color: #000000dd;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 5rem;
+  font-weight: 600;
+  color: #000000dd;
   }
   
   .likes-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
   }
   
   .likes {
-    font-size: 0.9rem;
-    font-weight: 600;
+  font-size: 0.9rem;
+  font-weight: 600;
   }
   
   .like-button {
-    color: rgb(255, 127, 80);
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    transition: color 300ms;
-    cursor: pointer;
+  color: rgb(255, 127, 80);
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+  transition: color 300ms;
+  cursor: pointer;
   }
   
   .like-button:hover {
-    color: rgb(241, 71, 19);
+  color: rgb(241, 71, 19);
   }
   
   .like-button:active {
-    color: rgb(253, 159, 124);
+  color: rgb(253, 159, 124);
   }
   
   .like-button:focus {
-    outline: none;
+  outline: none;
   }
   
   .comments {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 10px;
-    font-size: 0.85rem;
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  font-size: 0.85rem;
   }
-
+  
   .comment-form {
-    width: 100%;
-    border-top: 1px solid #00000020;
-    padding: 10px;
-    margin-top: 10px;
+  width: 100%;
+  border-top: 1px solid #00000020;
+  padding: 10px;
+  margin-top: 10px;
   }
   
   .comment-input {
-    width: 95%;
-    border: none;
-    font-size: 0.8rem;
+  width: 95%;
+  border: none;
+  font-size: 0.8rem;
   }
   
   .comment-input:focus {
-    outline: none;
+  outline: none;
   }
   
   .comment-button {
-    border: none;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: rgb(92, 114, 238);
-    cursor: pointer;
-    transition: color 300ms;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(92, 114, 238);
+  cursor: pointer;
+  transition: color 300ms;
   }
   
   .comment-button:hover {
-    color: rgb(37, 68, 245);
+  color: rgb(37, 68, 245);
   }
   
   .comment-button:active {
-    color: rgb(127, 146, 250);
+  color: rgb(127, 146, 250);
   }
   
   .comment-button:focus {
-    outline: none;
-  }
-
-  .paragraph{
-    text-align: left;
-    padding: 10px;
+  outline: none;
   }
   
-
-  #drinks {
-    width: 200px;
-    margin-top: 10px;
-    margin-left: 10px;
+  .paragraph{
+  text-align: left;
+  padding: 10px;
   }
-
-  /* CSS Comment Section  */ 
-
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f5f6f6;
-    font-family: arial;
-}
-.container
-{
-    width: 600px;
-    border: 2px solid #333;
-    padding: 15px 10px;
-}
-.container h2
-{
-    text-align: center;
-    margin-bottom: 15px
-}
-textarea
-{
-    height: 20px;
-    width: 100%;
-    border: none;
-    border-bottom: 2px solid #aaa;
-    background-color: transparent;
-    margin-bottom: 10px;
-    resize: none;
-    outline: none;
-    transition: .5s
-}
-
-input[type="submit"], button
-{
-    padding: 10px 15px;
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-}
-input[type="submit"]
-{
-    color: #fff;
-    background-color: #273c75
-}
-button
-{
-    color: #333;
-    background-color: transparent
-}
-.btn
-{
-    display: none
-}
+  
+  
+  #drinks {
+  width: 200px;
+  margin-top: 10px;
+  margin-left: 10px;
+  }
+  
+  .content-small {
+  align-items: flex-end;
+  }
+  
+  
