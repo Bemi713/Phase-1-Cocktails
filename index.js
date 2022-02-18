@@ -111,6 +111,44 @@ dropdown.addEventListener("change", (param) => {
 })
 
 //Hello 
+// Comment Section
+
+var field = document.querySelector('textarea');
+var backUp = field.getAttribute('placeholder');
+var btn = document.querySelector('.btn');
+var clear = document.getElementById('clear')
+
+const commentsSeciton = document.getElementById("comments-section")
+const commentForm = document.getElementById("comments-form")
+const placeholder = document.getElementById("placeholder")
+
+commentForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+    let newComment = document.createElement("li")
+    newComment.innerText = placeholder.value
+    commentsSeciton.append(newComment)
+    commentForm.reset();
+
+})
+
+field.onfocus = function(){
+    this.setAttribute('placeholder', '');
+    this.style.borderColor = '#333';
+    btn.style.display = 'block'
+}
+
+field.onblur = function(){
+    this.setAttribute('placeholder',backUp);
+    this.style.borderColor = '#aaa'
+}
+
+clear.onclick = function(){
+    btn.style.display = 'none';
+    field.value = '';
+}
+
+
+
 
 var field = document.querySelector('textarea');
 var backUp = field.getAttribute('placeholder');
